@@ -119,6 +119,7 @@ def trigger_error():
         logger.debug(f"Intentional error triggered by IP: {request.remote_addr}")
         try:
             result = undefined_variable + "This should cause an error"
+    undefined_variable = "Defined now"  # Define the variable before using it
             return jsonify({'result': result})
         except NameError as e:
             import traceback
