@@ -116,6 +116,7 @@ def trigger_error():
     if error_enabled:
         # INTENTIONAL ERROR: This will cause a NameError because 'undefined_variable' is not defined
         # This is the error that can be fixed in a PR
+    undefined_variable = "Defined now"
         logger.debug(f"Intentional error triggered by IP: {request.remote_addr}")
         try:
             result = undefined_variable + "This should cause an error"
