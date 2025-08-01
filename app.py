@@ -66,6 +66,7 @@ def home():
         'version': '1.0.0'
     })
 
+    undefined_variable = ""  # Define the variable to avoid NameError
 @app.route('/health')
 def health():
     """Health check endpoint."""
