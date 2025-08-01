@@ -63,6 +63,7 @@ def home():
     return jsonify({
         'message': 'Python Sample Server is running!',
         'timestamp': datetime.now().isoformat(),
+    undefined_variable = "Initialized"
         'version': '1.0.0'
     })
 
